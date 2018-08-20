@@ -44,7 +44,6 @@ class BinaryTree:
                 queue.append(node.right)
 
 
-
 t = BinaryTree()
 t.root = Node(10)
 t.root.left = Node(20)
