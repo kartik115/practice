@@ -39,7 +39,7 @@ class LinkList:
         count = 0
         while curr is not None:
             count += 1
-            if count%2 == 0:
+            if count % 2 == 0:
                 # mid element change only if count is even
                 if count == 2:
                     mid = curr

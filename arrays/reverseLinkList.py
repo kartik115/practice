@@ -32,26 +32,26 @@ class LinkList:
 # (where k is an input to the function).If a linked list is given as 
 # 1->2->3->4->5->6->7->8->NULL and k = 3 then output will be 3->2->1->6->5->4->8->7->NULL.
 def reverse(head, k):
-	current = head
-	previous = None
-	upcoming = None
-	first = None
-	count = 0
+    current = head
+    previous = None
+    upcoming = None
+    first = None
+    count = 0
 
-	while current is not None and count < k:
-		count += 1
-		upcoming = current.next
-		current.next = previous
-		previous = current
-		current = upcoming
-	if current is not None:
-		head.next = reverse(current, k)
-	return previous
-        
+    while current is not None and count < k:
+        count += 1
+        upcoming = current.next
+        current.next = previous
+        previous = current
+        current = upcoming
+    if current is not None:
+        head.next = reverse(current, k)
+    return previous
+
 
 if __name__ == "__main__":
     T = int(input())
-    while (T>0):
+    while T > 0:
         T = T - 1
         n = int(input())
         arr = list(map(int, input().split()))

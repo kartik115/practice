@@ -14,12 +14,10 @@ def max_subarray_sum(arr, n):
             max_ending_here = 0
     return max_so_far
 
+
 test_cases = int(input())
 while test_cases != 0:
     n = int(input())
     arr = list(map(int, input().split()))
     print(max_subarray_sum(arr, n))
     test_cases -= 1
-
-
-
