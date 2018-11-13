@@ -1,0 +1,17 @@
+{
+  "if": {
+    "left": "a",
+    "op": ">",
+    "right": "b"
+  },
+  "then": "Yes",
+  "else": {
+    "if": {
+      "left": "a",
+      "op": "==",
+      "right": "b"
+    },
+    "then": "Equals",
+    "else": "No"
+  }
+}
